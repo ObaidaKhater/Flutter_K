@@ -25,13 +25,18 @@ class MyApp extends StatelessWidget {
           Locale("ar", ""),
         ],
         theme: ThemeData(
-          primaryColor: Color(0xFF0063B2),
+            primaryColor: Color(0xFF0063B2),
+            accentColor: Color(0xFF9CC3D5),
+            backgroundColor: Colors.white,
             textTheme: TextTheme(
-                headline1: TextStyle(
-          color: Colors.white,
-          fontSize: 22.sp,
-                  fontWeight: FontWeight.w600
-        ),
+              headline1: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22.sp,
+                  fontWeight: FontWeight.w600),
+              headline2: TextStyle(
+                  color: Colors.black,
+                  fontSize: 24.sp,
+                  fontWeight: FontWeight.bold),
               subtitle1: TextStyle(
                 color: Colors.white70,
                 fontSize: 16.sp,
