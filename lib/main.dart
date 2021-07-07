@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'ui/pages/login/login_screen.dart';
+import 'ui/pages/sigIn_page/sigIn_with_pin_code_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-        home: LoginScreen(),
+        home: SigInWithPinCodePage(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
@@ -30,16 +30,28 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.white,
             textTheme: TextTheme(
               headline1: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22.sp,
-                  fontWeight: FontWeight.w600),
+                color: Colors.white,
+                fontSize: 22.sp,
+                fontWeight: FontWeight.w600,
+              ),
               headline2: TextStyle(
-                  color: Colors.black,
-                  fontSize: 24.sp,
-                  fontWeight: FontWeight.bold),
+                color: Colors.black,
+                fontSize: 24.sp,
+                fontWeight: FontWeight.bold,
+              ),
               subtitle1: TextStyle(
                 color: Colors.white70,
                 fontSize: 16.sp,
+              ),
+              subtitle2: TextStyle(
+                color: Colors.black,
+                fontSize: 17.sp,
+                fontWeight: FontWeight.w600,
+              ),
+              headline4: TextStyle(
+                color: Colors.white,
+                fontSize: 17.sp,
+                fontWeight: FontWeight.w600,
               ),
             )),
       ),
