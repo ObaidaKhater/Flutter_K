@@ -9,7 +9,7 @@ Column buildColumn(BuildContext context) {
       buildExpanded(1),
       Expanded(
         flex: 4,
-        child: InkWell(
+        child: GestureDetector(
           onTap: () {},
           child: buildContainer(context, 'ألعاب ويب'),
         ),
@@ -17,7 +17,7 @@ Column buildColumn(BuildContext context) {
       buildExpanded(1),
       Expanded(
         flex: 4,
-        child: InkWell(
+        child: GestureDetector(
           onTap: () {},
           child: buildContainer(context, 'تطبيقات العاب'),
         ),
@@ -25,7 +25,7 @@ Column buildColumn(BuildContext context) {
       buildExpanded(1),
       Expanded(
         flex: 4,
-        child: InkWell(
+        child: GestureDetector(
           onTap: () {},
           child: buildContainer(context, 'قصص وحكايا'),
         ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_k/ui/pages/login/main_login.dart';
 import 'package:flutter_k/ui/pages/main_page/main_page.dart';
+import 'package:flutter_k/ui/pages/student_area/main_student_area.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-        home: MainPage(),
+        home:MainStudentArea(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,

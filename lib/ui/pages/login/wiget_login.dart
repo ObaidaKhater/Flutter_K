@@ -10,8 +10,8 @@ Column buildColumn(BuildContext context) {
       buildExpanded(1),
       Expanded(
         flex: 4,
-        child: InkWell(
-          onTap: () {},
+        child:GestureDetector(
+          onTap: (){},
           child: buildContainer(context, 'تسجيل الدخول\nلأولياء الأمور'),
         ),
       ),
@@ -19,7 +19,7 @@ Column buildColumn(BuildContext context) {
       Expanded(flex: 1, child: Container()),
       Expanded(
         flex: 4,
-        child: InkWell(
+        child: GestureDetector(
           onTap: () {},
           child: buildContainer(context, 'تسجيل الدخول\nللموظفين'),
         ),
