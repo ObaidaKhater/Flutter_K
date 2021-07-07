@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_k/data/news_data.dart';
 import 'package:flutter_k/ui/pages/main_page/item_column_widget.dart';
-import 'package:flutter_k/ui/pages/main_page/new_item_widget.dart';
 import 'package:flutter_k/ui/pages/main_page/news_box_widget.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MainPage extends StatelessWidget {
   @override
