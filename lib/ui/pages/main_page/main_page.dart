@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_k/ui/pages/main_page/item_column_widget.dart';
-import 'package:flutter_k/ui/pages/main_page/news_box_widget.dart';
+import 'package:flutter_k/ui/pages/main_page/custom_item_column_widget.dart';
+import 'package:flutter_k/ui/pages/main_page/custom_news_box_widget.dart';
 
 class MainPage extends StatelessWidget {
   @override
@@ -29,24 +29,24 @@ class MainPage extends StatelessWidget {
         children: [
           Expanded(
             flex: 1,
-            child: NewsBoxWidget(),
+            child: CustomNewsBoxWidget(),
           ),
           Expanded(
               flex: 1,
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    ItemColumnWidget(
+                    CustomItemColumnWidget(
                       title: 'من نحن',
                       icon: Icons.apartment,
                     ),
-                    ItemColumnWidget(
+                    CustomItemColumnWidget(
                         title: 'سياسات الروضة', icon: Icons.assignment_rounded),
-                    ItemColumnWidget(
+                    CustomItemColumnWidget(
                       title: 'أليه التسجيل',
                       icon: Icons.login_rounded,
                     ),
-                    ItemColumnWidget(
+                    CustomItemColumnWidget(
                       title: 'التوظيف',
                       icon: Icons.app_registration,
                     ),

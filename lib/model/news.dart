@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 
-class New {
+class News {
   String id;
   String title;
   String description;
   String imagePath;
   DateTime date;
 
-  New(
+  News(
       {@required this.id,
       @required this.title,
       @required this.description,

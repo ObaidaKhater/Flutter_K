@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_k/model/new.dart';
+import 'package:flutter_k/model/news.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class NewItemWidget extends StatelessWidget {
-  New itemNew;
+class CustomNewsItemWidget extends StatelessWidget {
+  News itemNews;
 
-  NewItemWidget(this.itemNew);
+  CustomNewsItemWidget(this.itemNews);
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +19,11 @@ class NewItemWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                itemNew.title,
+                itemNews.title,
                 style: Theme.of(context).textTheme.headline1,
               ),
               Text(
-                itemNew.description,
+                itemNews.description,
                 textAlign: TextAlign.center,
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
@@ -37,7 +37,7 @@ class NewItemWidget extends StatelessWidget {
       decoration: BoxDecoration(
           image: DecorationImage(
         fit: BoxFit.cover,
-        image: NetworkImage(itemNew.imagePath),
+        image: NetworkImage(itemNews.imagePath),
       )),
     );
   }
