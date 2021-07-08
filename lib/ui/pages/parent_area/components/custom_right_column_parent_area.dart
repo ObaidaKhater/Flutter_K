@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_k/ui/pages/lessons_for_student/student_lessons_screen.dart';
+import 'package:flutter_k/ui/pages/study_fees/study_fees_screen.dart';
 import 'components.dart';
 
 class CustomRightColumnParentArea extends StatelessWidget {
@@ -13,7 +15,10 @@ class CustomRightColumnParentArea extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: () {
-              print('wow');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => StudentLessonsScreen()),
+              );
             },
             child: buildSizedBox(context, 'الدروس'),
           ),
@@ -22,7 +27,12 @@ class CustomRightColumnParentArea extends StatelessWidget {
             child: buildSizedBox(context, 'طلب إذن غياب'),
           ),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => StudyFeesScreen()),
+              );
+            },
             child: buildSizedBox(context, 'الرسوم الدراسية'),
           ),
           GestureDetector(

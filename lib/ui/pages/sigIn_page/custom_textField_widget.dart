@@ -8,14 +8,12 @@ class CustomTextFieldWidget extends StatelessWidget {
   TextInputType textInputType;
   TextEditingController textEditingController;
 
-
   CustomTextFieldWidget({
     @required this.labelText,
     @required this.notShowText,
     @required this.icon,
     @required this.textInputType,
     @required this.textEditingController,
-
   });
 
   @override
