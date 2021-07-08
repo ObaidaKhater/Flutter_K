@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_k/data/news_data.dart';
-import 'package:flutter_k/ui/pages/main_page/new_item_widget.dart';
+import 'package:flutter_k/ui/pages/main_page/custom_news_item_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class NewsBoxWidget extends StatefulWidget {
+class CustomNewsBoxWidget extends StatefulWidget {
   @override
-  _NewsBoxWidgetState createState() => _NewsBoxWidgetState();
+  _CustomNewsBoxWidgetState createState() => _CustomNewsBoxWidgetState();
 }
 
-class _NewsBoxWidgetState extends State<NewsBoxWidget> {
-  int currentIndex = NewData.newData.news.length ~/ 2;
+class _CustomNewsBoxWidgetState extends State<CustomNewsBoxWidget> {
+  int currentIndex = NewsData.newsData.news.length ~/ 2;
 
   @override
   Widget build(BuildContext context) {
@@ -18,13 +18,13 @@ class _NewsBoxWidgetState extends State<NewsBoxWidget> {
       child: Stack(
         children: [
           PageView.builder(
-            itemCount: NewData.newData.news.length,
+            itemCount: NewsData.newsData.news.length,
             scrollDirection: Axis.horizontal,
             controller: PageController(
-              initialPage: NewData.newData.news.length ~/ 2,
+              initialPage: NewsData.newsData.news.length ~/ 2,
             ),
             itemBuilder: (context, index) {
-              return NewItemWidget(NewData.newData.news[index]);
+              return CustomNewsItemWidget(NewsData.newsData.news[index]);
             },
             onPageChanged: (newIndex) {
               currentIndex = newIndex;
@@ -37,7 +37,7 @@ class _NewsBoxWidgetState extends State<NewsBoxWidget> {
               alignment: Alignment.bottomCenter,
               child: AnimatedSmoothIndicator(
                 activeIndex: currentIndex,
-                count: NewData.newData.news.length,
+                count: NewsData.newsData.news.length,
                 effect: ExpandingDotsEffect(
                   dotHeight: 8.r,
                   activeDotColor: Theme.of(context).primaryColor,
