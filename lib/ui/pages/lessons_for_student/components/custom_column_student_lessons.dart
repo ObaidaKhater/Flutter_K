@@ -32,14 +32,6 @@ class CustomColumnStudentLessons extends StatelessWidget {
             child: customSharedContainerWithText(context, 'الدروس لهذا الفصل'),
           ),
         ),
-        SizedBox(
-          height: 200.h,
-          width: MediaQuery.of(context).size.width,
-          child: GestureDetector(
-            onTap: () {},
-            child: customSharedContainerWithText(context, 'الدروس المضافة'),
-          ),
-        ),
       ],
     );
   }

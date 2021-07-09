@@ -1,6 +1,6 @@
 import 'package:flutter_k/model/details.dart';
 
-class Lesson{
+class Lesson {
   String id;
   String title;
   Details details;
