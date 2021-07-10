@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_k/ui/pages/sigIn_page/custom_button_widget.dart';
+import 'package:flutter_k/ui/pages/sigIn_pages/custom_button_widget.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'custom_pin_code_widget.dart';
@@ -33,7 +33,7 @@ class PinCodeSignPage extends StatelessWidget {
           padding: EdgeInsets.all(30),
           child: Column(
             children: [
-              Text('رقم تسجيل الدخول السريع'),
+              Text('رقم تسجيل الدخول السريع',style: Theme.of(context).textTheme.subtitle2,),
               SizedBox(height: 10.h),
               CustomPinCodeWidget(
                 textController: pinCodeController,

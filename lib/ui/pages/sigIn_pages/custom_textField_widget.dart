@@ -6,20 +6,21 @@ class CustomTextFieldWidget extends StatelessWidget {
   bool notShowText;
   IconData icon;
   TextInputType textInputType;
-  TextEditingController textEditingController;
+  Function validatorFunction;
+  Function onSavedFunction;
 
   CustomTextFieldWidget({
     @required this.labelText,
     @required this.notShowText,
     @required this.icon,
     @required this.textInputType,
-    @required this.textEditingController,
+    @required this.validatorFunction,
+    @required this.onSavedFunction,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      controller: textEditingController,
       style: Theme.of(context).textTheme.subtitle2,
       obscureText: notShowText,
       keyboardType: textInputType,
@@ -27,10 +28,8 @@ class CustomTextFieldWidget extends StatelessWidget {
         labelText: labelText,
         prefixIcon: Icon(icon),
       ),
-      validator: (value) {
-        if (value.isEmpty) return 'يرجى إدخال هذا الحقل.';
-        return null;
-      },
+      validator: validatorFunction,
+      onSaved:onSavedFunction,
     );
   }
 }
