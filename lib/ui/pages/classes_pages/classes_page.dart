@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_k/ui/shared/shared_widget/custom_listTile_style_three_widget.dart';
+import 'package:flutter_k/ui/shared/shared_widget/custom_listTile_style_two_widget.dart';
 
-class StudentsPermissionsToday extends StatelessWidget {
+class ClassesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,7 +9,7 @@ class StudentsPermissionsToday extends StatelessWidget {
         backgroundColor: Theme.of(context).primaryColor,
         centerTitle: true,
         title: Text(
-          'أُذونات الطلاب لليوم',
+          'الفصول الدراسية',
           style: Theme.of(context).textTheme.headline1,
         ),
         leading: IconButton(
@@ -18,21 +18,21 @@ class StudentsPermissionsToday extends StatelessWidget {
             color: Theme.of(context).backgroundColor,
           ),
           onPressed: () {
-            // TODO: Go (Main Driver Page)
+            // TODO: Go (Main Teacher Page)
           },
         ),
       ),
-      // TODO : Get List Student From (DriverData.getStudentsPermissionsToday)
+      // TODO : Get List Classes To Teacher From (TeacherData.getAllClasses)
       body: Container(
-        margin: EdgeInsets.symmetric(vertical: 5),
         child: ListView.builder(
-            itemCount: 5,
+            itemCount: 10,
             itemBuilder: (context, index) {
-              return CustomListTileStyleThreeWidget(
-                title: 'محمد علي محمد خاطر',
-                subtitle1: 'غزة-الشجاعية-شارع مشتهى',
-                subtitle2: '0593333225',
-                onTap: null,
+              return CustomListTileStyleTwoWidget(
+                title: 'فصل A',
+                subtitle: 'عدد الطلاب : 18',
+                onTap: (){
+                  //TODO: Go To (ClassDetailsPage)
+                },
               );
             }),
       ),

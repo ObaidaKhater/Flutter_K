@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_k/ui/pages/driver_pages/custom_listTile_widget.dart';
+import 'package:flutter_k/ui/shared/shared_widget/custom_listTile_style_three_widget.dart';
 
 class StudentsAssignedToDeliver extends StatelessWidget {
   @override
@@ -27,10 +27,11 @@ class StudentsAssignedToDeliver extends StatelessWidget {
         child: ListView.builder(
             itemCount: 10,
             itemBuilder: (context, index) {
-              return CustomListTileWidget(
+              return CustomListTileStyleThreeWidget(
                 title: 'محمد علي محمد خاطر',
                 subtitle1: 'غزة-الشجاعية-شارع مشتهى',
                 subtitle2: '0593333225',
+                onTap: null,
               );
             }),
       ),

@@ -13,4 +13,11 @@ class Class {
 
   Class(this.id, this.className, this.levelClass, this.students,
       this.englishTeacherId, this.classNannyTeacherId, this.schoolYear);
+
+  String printLevel() {
+    if (this.levelClass == LevelClass.Level1) return 'الحضانة';
+    if (this.levelClass == LevelClass.Level2) return 'البستان';
+    if (this.levelClass == LevelClass.Level3) return 'التمهيدي';
+    return null;
+  }
 }

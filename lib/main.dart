@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_k/model/class.dart';
+import 'package:flutter_k/ui/pages/classes_pages/class_details_page.dart';
+import 'package:flutter_k/ui/pages/classes_pages/classes_page.dart';
+import 'package:flutter_k/ui/pages/driver_pages/students_permissions_today_page.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/pin_code_sign_page.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/sigIn_page.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/sigIn_with_pin_code_page.dart';
@@ -18,7 +22,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-        home: PinCodeSignPage(),
+        home: ClassDetailsPage(Class('555', 'className', LevelClass.Level1, [], '33', '66', '1999')),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
@@ -70,6 +74,11 @@ class MyApp extends StatelessWidget {
               ),
               headline5: TextStyle(
                 color: kTextDarkColor.withOpacity(0.5),
+                fontSize: 14.sp,
+                fontFamily: 'cairo',
+              ),
+              headline6: TextStyle(
+                color: kTextDarkColor.withOpacity(0.8),
                 fontSize: 14.sp,
                 fontFamily: 'cairo',
               ),
