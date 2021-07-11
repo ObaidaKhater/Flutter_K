@@ -3,7 +3,7 @@ import 'package:flutter_k/ui/shared/shared_widget/custom_item_popMenu_button_wid
 
 enum Actions { TakeAttendanceToday }
 
-class CustomPopMenuButtonWidget extends StatelessWidget {
+class CustomPopMenuButtonClassWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton<Actions>(

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_k/model/class.dart';
-import 'package:flutter_k/ui/pages/classes_pages/custom_popMenu_button_class_widget.dart';
+import 'package:flutter_k/model/student.dart';
+import 'package:flutter_k/ui/shared/shared_widget/custom_listTile_style_four_widget.dart';
 import 'package:flutter_k/ui/shared/shared_widget/custom_row_text_item_widget.dart';
+import 'package:flutter_k/ui/pages/student_details_page/custom_popMenu_button_student_widget.dart';
 import 'package:flutter_k/ui/shared/shared_widget/custom_divider_widget.dart';
-import 'package:flutter_k/ui/shared/shared_widget/custom_listTile_style_one_widget.dart';
-import 'package:flutter_k/ui/shared/shared_widget/custom_listTile_style_two_widget.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class ClassDetailsPage extends StatelessWidget {
-  Class classModel;
+class StudentDetailsPage extends StatelessWidget {
+  Student student;
 
-  ClassDetailsPage(this.classModel);
+  StudentDetailsPage(this.student);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class ClassDetailsPage extends StatelessWidget {
         backgroundColor: Theme.of(context).primaryColor,
         centerTitle: true,
         title: Text(
-          this.classModel.className,
+          this.student.fullName,
           style: Theme.of(context).textTheme.headline1,
         ),
         leading: IconButton(
@@ -28,10 +28,10 @@ class ClassDetailsPage extends StatelessWidget {
             color: Theme.of(context).backgroundColor,
           ),
           onPressed: () {
-            // TODO: Go (Classes Page)
+            // TODO: Go (Classes Details Page)
           },
         ),
-        actions: [CustomPopMenuButtonClassWidget()],
+        actions: [CustomPopMenuButtonStudentWidget()],
       ),
       body: Column(
         children: [
@@ -44,36 +44,43 @@ class ClassDetailsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CustomRowTextItemWidget(
-                    title: 'أسم الفصل',
-                    value: this.classModel.className,
+                    title: 'أسم الطالب',
+                    value: this.student.fullName,
                   ),
                   CustomRowTextItemWidget(
-                    title: 'مستوى الفصل',
-                    value: this.classModel.printLevel(),
+                    title: 'الجنس',
+                    value: this.student.printGender(),
                   ),
                   CustomRowTextItemWidget(
-                    title: 'عدد طلاب الفصل',
-                    value: this.classModel.students.length.toString(),
+                    title: 'عنوان البريد الإلكتروني',
+                    value: this.student.emilAddress,
                   ),
                   CustomRowTextItemWidget(
-                    title: 'السنة الدراسية',
-                    value: this.classModel.schoolYear,
+                    title: 'رقم الهاتف',
+                    value: this.student.phoneNumber1,
+                  ),
+                  CustomRowTextItemWidget(
+                    title: 'رقم الهاتف',
+                    value: this.student.phoneNumber1,
                   ),
                 ],
               ),
             ),
           ),
-          Text('طلاب الفصل', style: Theme.of(context).textTheme.headline3),
+          Text('تكاليف الطالب', style: Theme.of(context).textTheme.headline3),
           CustomDividerWidget(),
+          //TODO: Get List Homework To Student (StudentData.getAllHomework)
           Expanded(
               flex: 2,
               child: ListView.builder(
-                  itemCount: this.classModel.students.length,
+                  itemCount: 10,
                   itemBuilder: (context, index) {
-                    return CustomListTileStyleOneWidget(
-                        title: this.classModel.students[index].fullName,
+                    return CustomListTileStyleFourWidget(
+                        title: 'الدرس الاول',
+                        subtitle: 'الرياضيات',
+                        containerText: 'غير مقيم',
                         onTap: () {
-                          //TODO : Go (Student Details Page)
+                          //TODO : Go (Homework Details Page)
                         });
                   })),
         ],

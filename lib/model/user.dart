@@ -27,4 +27,14 @@ abstract class User {
       this.lastLogin,
       this.gender,
       this.nationality);
+
+  String printGender(){
+    String text ='';
+    if(this.gender == Gender.male)
+      text ='ذكر';
+    else if(this.gender == Gender.female)
+      text = 'أنثى';
+    return text;
+
+  }
 }
