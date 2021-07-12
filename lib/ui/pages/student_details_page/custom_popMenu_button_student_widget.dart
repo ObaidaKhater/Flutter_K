@@ -13,12 +13,14 @@ class CustomPopMenuButtonStudentWidget extends StatelessWidget {
               child: CustomItemPopMenuButtonWidget(
                 title: 'كشف الحضور',
                 icon: Icons.checklist,
+                onTap: () {},
               ),
               value: Actions.AttendanceSheet),
           PopupMenuItem<Actions>(
               child: CustomItemPopMenuButtonWidget(
                 title: 'كشف العلامات',
                 icon: Icons.list_alt,
+                onTap: () {},
               ),
               value: Actions.AttendanceSheet),
         ];
@@ -27,10 +29,9 @@ class CustomPopMenuButtonStudentWidget extends StatelessWidget {
         if (action == Actions.AttendanceSheet)
           print('');
         // TODO : (Show Attendance Sheet to Student)
-        else if (action == Actions.MarkSheet)
-          print('');
+        else if (action == Actions.MarkSheet) print('');
         // TODO : (Show Mark Sheet to Student)
-          return null;
+        return null;
       },
     );
   }

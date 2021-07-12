@@ -73,7 +73,9 @@ class _SigInWithPinCodePageState extends State<SigInWithPinCodePage> {
                     _formKey.currentState.save();
                     if (userName.length != 0 &&
                         password.length != 0 &&
-                        pinCodeController.text.length != 0) {}
+                        pinCodeController.text.length != 0) {
+                      //TODO: Authontication with data page
+                    }
                     Navigator.of(context)
                         .push(MaterialPageRoute(builder: (context) {
                       return StudentAreaScreen();

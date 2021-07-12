@@ -30,7 +30,7 @@ class CustomColumnLogin extends StatelessWidget {
           text: 'تسجيل الدخول\nللموظفين',
           onTap: () {
             Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-              return SigInPage();
+              return SignInPage();
             }));
           },
         ),
