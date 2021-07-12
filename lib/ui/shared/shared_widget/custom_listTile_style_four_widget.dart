@@ -34,7 +34,7 @@ class CustomListTileStyleFourWidget extends StatelessWidget {
           ),
         ),
         decoration: BoxDecoration(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withOpacity(0.15),
             borderRadius: BorderRadius.circular(15)),
       ),
       leading: CircleAvatar(

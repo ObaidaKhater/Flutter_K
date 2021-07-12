@@ -20,8 +20,10 @@ class _CustomItemGamePageState extends State<CustomItemGamePage> {
 
   @override
   Widget build(BuildContext context) {
-    return WebView(
-      initialUrl: widget.url,
+    return SafeArea(
+      child: WebView(
+        initialUrl: widget.url,
+      ),
     );
   }
 }
