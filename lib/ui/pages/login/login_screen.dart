@@ -14,7 +14,10 @@ class LoginScreen extends StatelessWidget {
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
       backgroundColor: Theme.of(context).primaryColor,
-      title: Text('تسجيل الدخول'),
+      title: Text(
+        'تسجيل الدخول',
+        style: Theme.of(context).textTheme.headline1,
+      ),
       centerTitle: true,
     );
   }

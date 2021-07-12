@@ -15,12 +15,12 @@ Widget customSharedContainerWithText(BuildContext context, String text) {
     margin: EdgeInsets.all(16),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(10.0),
-      color: Theme.of(context).accentColor,
+      color: Colors.blueGrey.shade100,
       border: Border.all(width: 1.0.r, color: const Color(0xffffffff)),
     ),
     child: Text(
       text,
-      style: TextStyle(fontSize: 25),
+      style: Theme.of(context).textTheme.headline2,
       textAlign: TextAlign.center,
     ),
   );

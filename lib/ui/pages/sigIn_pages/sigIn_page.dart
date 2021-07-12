@@ -18,15 +18,6 @@ class SigInPage extends StatelessWidget {
           ' تسجيل الدخول',
           style: Theme.of(context).textTheme.headline1,
         ),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_rounded,
-            color: Theme.of(context).backgroundColor,
-          ),
-          onPressed: () {
-            // TODO: Go (Main Page)
-          },
-        ),
       ),
       body: Align(
         alignment: Alignment.center,

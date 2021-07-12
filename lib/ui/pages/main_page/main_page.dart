@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_k/ui/pages/login/login_screen.dart';
 import 'package:flutter_k/ui/pages/main_page/custom_item_column_widget.dart';
 import 'package:flutter_k/ui/pages/main_page/custom_news_box_widget.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MainPage extends StatelessWidget {
   @override
@@ -20,7 +22,9 @@ class MainPage extends StatelessWidget {
               color: Theme.of(context).backgroundColor,
             ),
             onPressed: () {
-              // TODO: Go (Login Page)
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                return LoginScreen();
+              }));
             },
           )
         ],

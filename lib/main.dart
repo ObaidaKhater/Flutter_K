@@ -10,6 +10,7 @@ import 'package:flutter_k/ui/pages/cartoon_video_pages/cartoon_video_page.dart';
 import 'package:flutter_k/ui/pages/classes_pages/class_details_page.dart';
 import 'package:flutter_k/ui/pages/classes_pages/classes_page.dart';
 import 'package:flutter_k/ui/pages/driver_pages/students_permissions_today_page.dart';
+import 'package:flutter_k/ui/pages/main_page/main_page.dart';
 import 'package:flutter_k/ui/pages/parent_news_page/parent_news_paga.dart';
 import 'package:flutter_k/ui/pages/student_lessons_for_semester_page/student_lessons_for_semester_page.dart';
 import 'package:flutter_k/ui/pages/student_lessons_required_today_page/student_lessons_required_today_page.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-        home:ParentNewsPage(),
+        home: MainPage(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,

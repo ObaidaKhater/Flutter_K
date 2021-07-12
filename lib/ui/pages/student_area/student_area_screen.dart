@@ -8,7 +8,8 @@ class StudentAreaScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('منطقة الطالب'),
+        title:
+            Text('منطقة الطالب', style: Theme.of(context).textTheme.headline1),
         actions: [
           CustomPopupMenuStudentArea(),
         ],

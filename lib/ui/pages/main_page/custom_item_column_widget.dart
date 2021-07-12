@@ -13,21 +13,21 @@ class CustomItemColumnWidget extends StatelessWidget {
       contentPadding: EdgeInsets.all(10),
       title: Text(
         title,
-        style: Theme.of(context).textTheme.headline2,
+        style: Theme.of(context).textTheme.headline3,
       ),
       leading: Container(
-        width: 55.w,
-        height: 55.h,
+        width: 40.w,
+        height: 40.h,
         child: Icon(
           icon,
           color: Theme.of(context).backgroundColor,
-          size: 33.r,
+          size: 25.r,
         ),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12.r),
             color: Theme.of(context).primaryColor),
       ),
-      onTap: (){
+      onTap: () {
         // TODO: Go To Page
       },
     );
