@@ -20,7 +20,7 @@ Widget customSharedContainerWithText(BuildContext context, String text) {
     ),
     child: Text(
       text,
-      style: Theme.of(context).textTheme.headline2,
+      style: Theme.of(context).textTheme.headline3,
       textAlign: TextAlign.center,
     ),
   );

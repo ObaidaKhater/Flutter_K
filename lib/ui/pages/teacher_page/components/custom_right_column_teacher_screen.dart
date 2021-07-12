@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_k/ui/pages/classes_pages/classes_page.dart';
 import 'package:flutter_k/ui/pages/parent_area/components/components.dart';
 
 class CustomRightColumnTeacherScreen extends StatelessWidget {
@@ -13,6 +14,10 @@ class CustomRightColumnTeacherScreen extends StatelessWidget {
         children: [
           GestureDetector(
             child: buildSizedBox(context, 'الفصول الدراسية'),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ClassesPage()));
+            },
           ),
           GestureDetector(
             onTap: () {},

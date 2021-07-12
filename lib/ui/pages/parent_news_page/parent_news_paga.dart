@@ -14,15 +14,6 @@ class ParentNewsPage extends StatelessWidget {
           'الأخبار',
           style: Theme.of(context).textTheme.headline1,
         ),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_rounded,
-            color: Theme.of(context).backgroundColor,
-          ),
-          onPressed: () {
-            // TODO: Go (Main Parent Page)
-          },
-        ),
       ),
       // TODO : Get List News To Parent From Admin
       body: Container(

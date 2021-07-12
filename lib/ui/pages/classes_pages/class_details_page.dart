@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_k/model/class.dart';
 import 'package:flutter_k/ui/pages/classes_pages/custom_popMenu_button_class_widget.dart';
+import 'package:flutter_k/ui/pages/student_details_page/student_details_page.dart';
 import 'package:flutter_k/ui/shared/shared_widget/custom_row_text_item_widget.dart';
 import 'package:flutter_k/ui/shared/shared_widget/custom_divider_widget.dart';
 import 'package:flutter_k/ui/shared/shared_widget/custom_listTile_style_one_widget.dart';
@@ -73,6 +74,11 @@ class ClassDetailsPage extends StatelessWidget {
                     return CustomListTileStyleOneWidget(
                         title: this.classModel.students[index].fullName,
                         onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => StudentDetailsPage(
+                                      this.classModel.students[index])));
                           //TODO : Go (Student Details Page)
                         });
                   })),

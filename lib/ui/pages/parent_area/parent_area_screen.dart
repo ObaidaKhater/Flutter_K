@@ -6,16 +6,17 @@ class ParentAreaScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar(),
+      appBar: appBar(context),
       backgroundColor: Theme.of(context).backgroundColor,
       body: Body(),
     );
   }
 
-  AppBar appBar() {
+  AppBar appBar(BuildContext context) {
     return AppBar(
       centerTitle: true,
-      title: Text('صفحة أولياء الأمور'),
+      title: Text('صفحة أولياء الأمور',
+          style: Theme.of(context).textTheme.headline1),
     );
   }
 }

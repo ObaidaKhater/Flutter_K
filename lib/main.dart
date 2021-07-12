@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-        home: MainPage(),
+        home: LessonDatails(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
@@ -46,6 +46,16 @@ class MyApp extends StatelessWidget {
           Locale("ar", ""),
         ],
         theme: ThemeData(
+            // appBarTheme: AppBarTheme(
+            //   textTheme: TextTheme(
+            //     headline1: TextStyle(
+            //       color: kTextLightColor,
+            //       fontSize: 21.sp,
+            //       fontWeight: FontWeight.w600,
+            //       fontFamily: 'cairo',
+            //     ),
+            //   ),
+            // ),
             primaryColor: kPrimaryColor,
             accentColor: kAccentColor,
             backgroundColor: kBackgroundColor,

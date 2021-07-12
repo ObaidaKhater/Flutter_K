@@ -15,9 +15,7 @@ class StudentAreaScreen extends StatelessWidget {
         ],
       ),
       backgroundColor: Theme.of(context).backgroundColor,
-      body: CustomColumnStudentArea(
-        context: context,
-      ),
+      body: CustomColumnStudentArea(context: context),
     );
   }
 }

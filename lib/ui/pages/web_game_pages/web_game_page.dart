@@ -14,24 +14,16 @@ class WebGamePage extends StatelessWidget {
           'ألعاب الويب',
           style: Theme.of(context).textTheme.headline1,
         ),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_rounded,
-            color: Theme.of(context).backgroundColor,
-          ),
-          onPressed: () {
-            // TODO: Go (Main Student Page)
-          },
-        ),
       ),
       // TODO : Get List Web Game From (WebGameData.getAllGame())
       body: Container(
         child: ListView.builder(itemBuilder: (context, index) {
           return CustomItemBoxKidMediaWidget(
             title: 'لعبة صيد السمك',
-            imagePath: 'https://upload.wikimedia.org/wikipedia/ar/0/02/Crash_Bandicoot_On_the_Run%21.jpg',
+            imagePath:
+                'https://upload.wikimedia.org/wikipedia/ar/0/02/Crash_Bandicoot_On_the_Run%21.jpg',
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context){
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return CustomItemGamePage(url: 'https://flutter.dev');
               }));
             },
@@ -40,5 +32,4 @@ class WebGamePage extends StatelessWidget {
       ),
     );
   }
-
 }

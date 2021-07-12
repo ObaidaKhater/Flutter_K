@@ -12,15 +12,6 @@ class StudentLessonsRequiredTodayPage extends StatelessWidget {
           'الدروس المطلوبة اليوم',
           style: Theme.of(context).textTheme.headline1,
         ),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_rounded,
-            color: Theme.of(context).backgroundColor,
-          ),
-          onPressed: () {
-            // TODO: Go (Student Main Lessons Page)
-          },
-        ),
       ),
       // TODO : Get List Student Lessons Required Today From (LessonData.getStudentLessonsRequiredToday)
       body: Container(
@@ -31,7 +22,7 @@ class StudentLessonsRequiredTodayPage extends StatelessWidget {
                 title: 'الدرس الاول',
                 subtitle1: 'الرياضيات',
                 subtitle2: 'الوقت المتبقي : 3 ساعات',
-                onTap:(){
+                onTap: () {
                   // TODO: Go TO Lesson Details Page
                 },
               );

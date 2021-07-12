@@ -12,15 +12,6 @@ class StudentLessonsForSemesterPage extends StatelessWidget {
           'الدروس لهذا الفصل',
           style: Theme.of(context).textTheme.headline1,
         ),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_rounded,
-            color: Theme.of(context).backgroundColor,
-          ),
-          onPressed: () {
-            // TODO: Go (Student Main Lessons Page)
-          },
-        ),
       ),
       // TODO : Get List Student Lessons For Semester From (LessonData.getStudentLessonsForSemester)
       body: Container(

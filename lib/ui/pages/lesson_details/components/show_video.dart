@@ -29,40 +29,37 @@ class _ShowVideoState extends State<ShowVideo> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200.h,
+      // height: 200.h,
       width: MediaQuery.of(context).size.width,
       child: FutureBuilder(
         future: _initializeVideoPlayerFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             return Stack(
+              alignment: Alignment.center,
               children: [
-                Center(
-                  child: AspectRatio(
-                    aspectRatio: _controller.value.aspectRatio,
-                    child: VideoPlayer(_controller),
-                  ),
+                AspectRatio(
+                  aspectRatio: _controller.value.aspectRatio,
+                  child: VideoPlayer(_controller),
                 ),
-                Center(
-                  child: AnimatedOpacity(
-                    duration: Duration(milliseconds: 250),
-                    opacity: _isPress ? 0 : 1,
-                    child: FloatingActionButton(
-                      onPressed: () {
-                        setState(() {
-                          if (_controller.value.isPlaying) {
-                            _isPress = false;
-                            _controller.pause();
-                          } else {
-                            _isPress = true;
-                            _controller.play();
-                          }
-                        });
-                      },
-                      child: Icon(_controller.value.isPlaying
-                          ? Icons.pause
-                          : Icons.play_arrow),
-                    ),
+                AnimatedOpacity(
+                  duration: Duration(milliseconds: 250),
+                  opacity: _isPress ? 0 : 1,
+                  child: FloatingActionButton(
+                    onPressed: () {
+                      setState(() {
+                        if (_controller.value.isPlaying) {
+                          _isPress = false;
+                          _controller.pause();
+                        } else {
+                          _isPress = true;
+                          _controller.play();
+                        }
+                      });
+                    },
+                    child: Icon(_controller.value.isPlaying
+                        ? Icons.pause
+                        : Icons.play_arrow),
                   ),
                 ),
               ],

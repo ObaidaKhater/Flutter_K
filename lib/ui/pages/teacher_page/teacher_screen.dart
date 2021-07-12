@@ -7,16 +7,17 @@ class TeacherScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar(),
+      appBar: appBar(context),
       backgroundColor: Theme.of(context).backgroundColor,
       body: Body(),
     );
   }
 
-  AppBar appBar() {
+  AppBar appBar(BuildContext context) {
     return AppBar(
       centerTitle: true,
-      title: Text('صفحة المعلمين'),
+      title:
+          Text('صفحة المعلمين', style: Theme.of(context).textTheme.headline1),
       actions: [
         TextButton.icon(
           onPressed: () {},

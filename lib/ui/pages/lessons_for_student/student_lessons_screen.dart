@@ -6,16 +6,16 @@ class StudentLessonsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar(),
+      appBar: appBar(context),
       backgroundColor: Theme.of(context).backgroundColor,
       body: CustomColumnStudentLessons(context: context),
     );
   }
 
-  AppBar appBar() {
+  AppBar appBar(BuildContext context) {
     return AppBar(
       centerTitle: true,
-      title: Text('الدروس'),
+      title: Text('الدروس', style: Theme.of(context).textTheme.headline1),
     );
   }
 }

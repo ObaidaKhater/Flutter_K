@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_k/ui/pages/parent_news_page/parent_news_paga.dart';
 import 'components.dart';
 
 class CustomLeftColumnParentArea extends StatelessWidget {
@@ -12,7 +13,10 @@ class CustomLeftColumnParentArea extends StatelessWidget {
       child: Column(
         children: [
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ParentNewsPage()));
+            },
             child: buildSizedBox(context, 'الأخبار'),
           ),
           GestureDetector(

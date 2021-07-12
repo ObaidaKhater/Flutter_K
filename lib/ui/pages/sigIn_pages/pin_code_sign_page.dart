@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_k/ui/pages/parent_area/parent_area_screen.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/custom_button_widget.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,15 +18,6 @@ class PinCodeSignPage extends StatelessWidget {
           ' تسجيل الدخول',
           style: Theme.of(context).textTheme.headline1,
         ),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_rounded,
-            color: Theme.of(context).backgroundColor,
-          ),
-          onPressed: () {
-            // TODO: Go (Main Page)
-          },
-        ),
       ),
       body: Align(
         alignment: Alignment.center,
@@ -33,7 +25,10 @@ class PinCodeSignPage extends StatelessWidget {
           padding: EdgeInsets.all(30),
           child: Column(
             children: [
-              Text('رقم تسجيل الدخول السريع',style: Theme.of(context).textTheme.subtitle2,),
+              Text(
+                'رقم تسجيل الدخول السريع',
+                style: Theme.of(context).textTheme.subtitle2,
+              ),
               SizedBox(height: 10.h),
               CustomPinCodeWidget(
                 textController: pinCodeController,
@@ -42,7 +37,10 @@ class PinCodeSignPage extends StatelessWidget {
               CustomButtonWidget(
                 title: 'تسجيل الدخول',
                 onPressed: () {
-                  //TODO: Login
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ParentAreaScreen()));
                 },
               ),
             ],

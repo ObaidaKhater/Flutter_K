@@ -23,7 +23,7 @@ class CustomContainer extends StatelessWidget {
       ),
       child: Text(
         text,
-        style: TextStyle(fontSize: 25),
+        style: Theme.of(context).textTheme.headline3,
         textAlign: TextAlign.center,
       ),
     );
