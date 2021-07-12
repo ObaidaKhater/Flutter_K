@@ -13,6 +13,7 @@ class CustomPopMenuButtonClassWidget extends StatelessWidget {
               child: CustomItemPopMenuButtonWidget(
                 title: 'أخذ حضور الطلاب لليوم',
                 icon: Icons.checklist,
+                onTap: (){},
               ),
               value: Actions.TakeAttendanceToday)
         ];
