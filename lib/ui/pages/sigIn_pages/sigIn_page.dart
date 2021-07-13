@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_k/ui/pages/sigIn_pages/custom_button_widget.dart';
+import 'package:flutter_k/ui/shared/shared_widget/custom_button_widget.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/custom_textField_widget.dart';
 import 'package:flutter_k/ui/pages/teacher_page/teacher_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
