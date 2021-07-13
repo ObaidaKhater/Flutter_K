@@ -23,15 +23,6 @@ class ClassDetailsPage extends StatelessWidget {
           this.classModel.className,
           style: Theme.of(context).textTheme.headline1,
         ),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_rounded,
-            color: Theme.of(context).backgroundColor,
-          ),
-          onPressed: () {
-            // TODO: Go (Classes Page)
-          },
-        ),
         actions: [CustomPopMenuButtonClassWidget()],
       ),
       body: Column(

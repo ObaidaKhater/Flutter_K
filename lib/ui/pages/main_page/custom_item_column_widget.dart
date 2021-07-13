@@ -16,8 +16,8 @@ class CustomItemColumnWidget extends StatelessWidget {
         style: Theme.of(context).textTheme.headline3,
       ),
       leading: Container(
-        width: 40.w,
-        height: 40.h,
+        width: 45.w,
+        height: 45.h,
         child: Icon(
           icon,
           color: Theme.of(context).backgroundColor,

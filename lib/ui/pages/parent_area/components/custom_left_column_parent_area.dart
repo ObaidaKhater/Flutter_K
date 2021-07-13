@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_k/ui/pages/parent_chat_page/parent_chat_page.dart';
 import 'package:flutter_k/ui/pages/parent_news_page/parent_news_paga.dart';
 import 'components.dart';
 
@@ -20,7 +21,10 @@ class CustomLeftColumnParentArea extends StatelessWidget {
             child: buildSizedBox(context, 'الأخبار'),
           ),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ParentChatPage()));
+            },
             child: buildSizedBox(context, 'المحادثات'),
           ),
           GestureDetector(

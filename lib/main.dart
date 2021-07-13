@@ -11,9 +11,11 @@ import 'package:flutter_k/ui/pages/classes_pages/class_details_page.dart';
 import 'package:flutter_k/ui/pages/classes_pages/classes_page.dart';
 import 'package:flutter_k/ui/pages/driver_pages/students_permissions_today_page.dart';
 import 'package:flutter_k/ui/pages/main_page/main_page.dart';
+import 'package:flutter_k/ui/pages/parent_chat_page/parent_chat_page.dart';
 import 'package:flutter_k/ui/pages/parent_news_page/parent_news_paga.dart';
 import 'package:flutter_k/ui/pages/student_lessons_for_semester_page/student_lessons_for_semester_page.dart';
 import 'package:flutter_k/ui/pages/student_lessons_required_today_page/student_lessons_required_today_page.dart';
+import 'package:flutter_k/ui/pages/students_solutions_page/students_solutions_page.dart';
 import 'package:flutter_k/ui/pages/web_game_pages/web_game_page.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/pin_code_sign_page.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/sigIn_page.dart';
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-        home: LessonDatails(),
+        home: MainPage(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,

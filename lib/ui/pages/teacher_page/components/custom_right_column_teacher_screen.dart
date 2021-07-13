@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_k/ui/pages/classes_pages/classes_page.dart';
 import 'package:flutter_k/ui/pages/parent_area/components/components.dart';
+import 'package:flutter_k/ui/pages/teacher_chat_page/teacher_chat_page.dart';
 
 class CustomRightColumnTeacherScreen extends StatelessWidget {
   const CustomRightColumnTeacherScreen({
@@ -20,7 +21,10 @@ class CustomRightColumnTeacherScreen extends StatelessWidget {
             },
           ),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => TeacherChatPage()));
+            },
             child: buildSizedBox(context, 'المحادثات'),
           ),
         ],
