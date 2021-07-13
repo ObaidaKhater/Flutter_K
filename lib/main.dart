@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_k/ui/pages/help_button/help_button_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'constants.dart';
-import 'ui/pages/driver_page_actions/driver_page_actions_screen.dart';
+import 'ui/pages/lesson_details_with_delivery/lesson_details_with_delivery_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-        home: DriverPageActions(),
+        home: LessonDatailsWithDelivery(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
@@ -61,7 +60,6 @@ class MyApp extends StatelessWidget {
               subtitle2: TextStyle(
                 color: kTextDarkColor,
                 fontSize: 17.sp,
-                fontWeight: FontWeight.w600,
                 fontFamily: 'cairo',
               ),
               headline3: TextStyle(

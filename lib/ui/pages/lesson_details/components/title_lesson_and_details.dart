@@ -23,7 +23,7 @@ class TitleLessonAndDetails extends StatelessWidget {
         SizedBox(height: kDefaultPadding / 2.h),
         Text(
           '$detail',
-          style: Theme.of(context).textTheme.headline5,
+          style: Theme.of(context).textTheme.subtitle2,
         ),
       ],
     );

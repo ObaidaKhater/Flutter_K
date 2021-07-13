@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../constants.dart';
 import 'progress_button.dart';
-import 'teacher_evaluation.dart';
+import '../../lesson_details_with_delivery/components/teacher_evaluation.dart';
 import 'title_lesson_and_details.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -30,17 +30,16 @@ class Body extends StatelessWidget {
               divider(),
               VideoLesson(),
               // divider(),
-              SizedBox(height: kDefaultPadding.h),
+              SizedBox(height: kDefaultPadding * 2.h),
               ProgressButtonAddAssignment(),
-              SizedBox(height: kDefaultPadding.h),
-              divider(),
-              TeacherEvaluation(),
-              SizedBox(height: kDefaultPadding.h),
-              TitleLessonAndDetails(
-                title: 'ملاحظات على التسليم من قبل المعلمة',
-                detail:
-                    'الدرس هو فترة منظمة من الوقت يقصد فيه حدوث التعلم. وهو يتضمن طالبا أو التفاصيل.',
-              ),
+              // divider(),
+              // TeacherEvaluation(),
+              // SizedBox(height: kDefaultPadding.h),
+              // TitleLessonAndDetails(
+              //   title: 'ملاحظات على التسليم من قبل المعلمة',
+              //   detail:
+              //       'الدرس هو فترة منظمة من الوقت يقصد فيه حدوث التعلم. وهو يتضمن طالبا أو التفاصيل.',
+              // ),
             ],
           ),
         ),
