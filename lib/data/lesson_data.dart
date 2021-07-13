@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter_k/model/lesson.dart';
+import 'package:image_picker/image_picker.dart';
 
 class LessonData {
   LessonData._();
@@ -15,5 +18,9 @@ class LessonData {
     return [];
   }
 
-
+  Future<File> pickerVideoFromGallery() async {
+    final pickedFile = await ImagePicker().getVideo(source: ImageSource.gallery);
+    final File file = File(pickedFile.path);
+    return file;
+  }
 }

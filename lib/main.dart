@@ -5,6 +5,7 @@ import 'package:flutter_k/model/location.dart';
 import 'package:flutter_k/model/student.dart';
 import 'package:flutter_k/model/tuition_fees.dart';
 import 'package:flutter_k/model/user.dart';
+import 'package:flutter_k/ui/pages/add_lesson_page/add_lesson_page.dart';
 import 'package:flutter_k/ui/pages/app_game_pages/app_game_page.dart';
 import 'package:flutter_k/ui/pages/cartoon_video_pages/cartoon_video_page.dart';
 import 'package:flutter_k/ui/pages/classes_pages/class_details_page.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-        home: MainPage(),
+        home: AddLessonPage(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,

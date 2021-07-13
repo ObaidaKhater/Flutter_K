@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_k/components/custom_expanded.dart';
+import 'package:flutter_k/ui/pages/add_lesson_page/add_lesson_page.dart';
+import 'package:flutter_k/ui/pages/added_lessons_page/added_lessons_page.dart';
 import 'package:flutter_k/ui/pages/students_solutions_page/students_solutions_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,7 +22,12 @@ class CustomColumnTeacherLessons extends StatelessWidget {
           height: 200.h,
           width: MediaQuery.of(context).size.width,
           child: GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AddLessonPage()),
+              );
+            },
             child: customSharedContainerWithText(context, 'أضافة درس'),
           ),
         ),
@@ -41,7 +48,12 @@ class CustomColumnTeacherLessons extends StatelessWidget {
           height: 200.h,
           width: MediaQuery.of(context).size.width,
           child: GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AddedLessonsPage()),
+              );
+            },
             child: customSharedContainerWithText(context, 'الدروس المضافة'),
           ),
         ),
