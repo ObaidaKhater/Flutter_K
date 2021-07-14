@@ -3,14 +3,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_k/model/subject.dart';
 import 'package:flutter_k/model/teacher.dart';
 import 'package:flutter_k/model/user.dart';
+import 'package:flutter_k/ui/pages/add_lesson_page/custom_add_homework_widget.dart';
 import 'package:flutter_k/ui/pages/add_lesson_page/custom_box_add_video_widget.dart';
+import 'package:flutter_k/ui/pages/add_lesson_page/custom_checkbox_list_tile_widget.dart';
 import 'package:flutter_k/ui/pages/add_lesson_page/custom_dropdown_button_form_field_widget.dart';
 import 'package:flutter_k/ui/pages/add_lesson_page/custom_select_classes-widget.dart';
 import 'package:flutter_k/ui/pages/add_lesson_page/custom_text_form_field_widget.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/custom_textField_widget.dart';
+import 'package:flutter_k/ui/shared/shared_widget/custom_button_widget.dart';
 import 'package:flutter_k/ui/shared/shared_widget/custom_divider_widget.dart';
 
-class AddLessonPage extends StatelessWidget {
+class AddLessonPage extends StatefulWidget {
+  @override
+  _AddLessonPageState createState() => _AddLessonPageState();
+}
+
+class _AddLessonPageState extends State<AddLessonPage> {
+  bool checkValue = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,25 +76,46 @@ class AddLessonPage extends StatelessWidget {
               SizedBox(height: 20),
               CustomDividerWidget(),
               SizedBox(height: 20),
-              CustomSelectClassesWidget(teacher: Teacher(
-                  id: 'id',
-                  fullName: 'fullName',
-                  ssn: 'ssn',
-                  phoneNumber1: 'phoneNumber1',
-                  phoneNumber2: 'phoneNumber2',
-                  emilAddress: 'emilAddress',
-                  dateJone: DateTime.now(),
-                  dataBirthday: DateTime.now(),
-                  password: 'password',
-                  lastLogin: DateTime.now(),
-                  gender: Gender.male,
-                  nationality: 'nationality',
-                  subjects: [
-                    Subject('id', 'الرياضيات', []),
-                    Subject('id', 'اللغة العربية', []),
-                    Subject('id', 'العلوم', []),
-                  ]),),
-
+              CustomSelectClassesWidget(
+                teacher: Teacher(
+                    id: 'id',
+                    fullName: 'fullName',
+                    ssn: 'ssn',
+                    phoneNumber1: 'phoneNumber1',
+                    phoneNumber2: 'phoneNumber2',
+                    emilAddress: 'emilAddress',
+                    dateJone: DateTime.now(),
+                    dataBirthday: DateTime.now(),
+                    password: 'password',
+                    lastLogin: DateTime.now(),
+                    gender: Gender.male,
+                    nationality: 'nationality',
+                    subjects: [
+                      Subject('id', 'الرياضيات', []),
+                      Subject('id', 'اللغة العربية', []),
+                      Subject('id', 'العلوم', []),
+                    ]),
+              ),
+              SizedBox(height: 30),
+              CustomDividerWidget(),
+              CustomCheckboxListTileWidget(
+                value: checkValue,
+                onChanged: (bool value) {
+                  checkValue = value;
+                  setState(() {});
+                },
+              ),
+              Visibility(
+                child: CustomAddHomeworkWidget(),
+                visible: checkValue,
+              ),
+              SizedBox(height: 30),
+              Align(
+                  alignment: Alignment.center,
+                  child: CustomButtonWidget(
+                    title: 'إضافة الدرس',
+                    onPressed: () {},
+                  )),
             ],
           ),
         ),
