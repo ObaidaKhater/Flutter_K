@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'constants.dart';
+import 'ui/pages/add_poll/add_poll_screen.dart';
 import 'ui/pages/lesson_details_with_delivery/lesson_details_with_delivery_screen.dart';
+import 'ui/pages/study_fees_statement/study_fees_statement_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-        home: LessonDatailsWithDelivery(),
+        home: AddPoll(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
