@@ -6,6 +6,7 @@ import 'package:flutter_k/model/student.dart';
 import 'package:flutter_k/model/tuition_fees.dart';
 import 'package:flutter_k/model/user.dart';
 import 'package:flutter_k/ui/pages/add_lesson_page/add_lesson_page.dart';
+import 'package:flutter_k/ui/pages/admin_dashboard_pages/add_teacher_admin_page/add_teacher_admin_page.dart';
 import 'package:flutter_k/ui/pages/admin_dashboard_pages/main_dashboard_page.dart';
 import 'package:flutter_k/ui/pages/app_game_pages/app_game_page.dart';
 import 'package:flutter_k/ui/pages/cartoon_video_pages/cartoon_video_page.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-        home: MainDashboardPage(),
+        home: AddTeacherAdminPage(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
