@@ -20,9 +20,9 @@ class CartoonVideoPage extends StatelessWidget {
             itemCount: 6,
             itemBuilder: (context, index) {
               return CustomItemBoxKidMediaWidget(
-                title: 'لعبة صيد السمك',
+                title: 'مسلسل سبايدر مان',
                 imagePath:
-                    'https://upload.wikimedia.org/wikipedia/ar/0/02/Crash_Bandicoot_On_the_Run%21.jpg',
+                    'assets/images/game.jpg',
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return ItemCartoonVideoPage(

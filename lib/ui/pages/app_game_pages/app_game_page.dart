@@ -18,9 +18,8 @@ class AppGamePage extends StatelessWidget {
       body: Container(
         child: ListView.builder(itemBuilder: (context, index) {
           return CustomItemBoxKidMediaWidget(
-            title: 'لعبة صيد السمك',
-            imagePath:
-                'https://upload.wikimedia.org/wikipedia/ar/0/02/Crash_Bandicoot_On_the_Run%21.jpg',
+            title: 'لعبة سبايدر مان',
+            imagePath: 'assets/images/game.jpg',
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return CustomItemGamePage(
