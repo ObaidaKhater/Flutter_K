@@ -5,9 +5,9 @@ class CustomHeaderDrawerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return UserAccountsDrawerHeader(
       currentAccountPicture: CircleAvatar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.white,
         backgroundImage: NetworkImage(
-            'https://upload.wikimedia.org/wikipedia/ar/0/02/Crash_Bandicoot_On_the_Run%21.jpg'),
+            'https://img.icons8.com/bubbles/2x/admin-settings-male.png'),
       ),
       accountName: Text(
         'المدير',

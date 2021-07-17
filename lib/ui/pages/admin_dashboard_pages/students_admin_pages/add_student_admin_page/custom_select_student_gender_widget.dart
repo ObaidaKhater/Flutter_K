@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_k/model/user.dart';
 
-class CustomSelectGenderWidget extends StatefulWidget {
+class CustomSelectStudentGenderWidget extends StatefulWidget {
   @override
-  _CustomSelectGenderWidgetState createState() =>
-      _CustomSelectGenderWidgetState();
+  _CustomSelectStudentGenderWidgetState createState() =>
+      _CustomSelectStudentGenderWidgetState();
 }
 
-class _CustomSelectGenderWidgetState extends State<CustomSelectGenderWidget> {
+class _CustomSelectStudentGenderWidgetState
+    extends State<CustomSelectStudentGenderWidget> {
   Gender genderType = Gender.male;
 
   @override

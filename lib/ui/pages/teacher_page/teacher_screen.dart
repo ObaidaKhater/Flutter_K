@@ -18,19 +18,7 @@ class TeacherScreen extends StatelessWidget {
       centerTitle: true,
       title:
           Text('صفحة المعلمين', style: Theme.of(context).textTheme.headline1),
-      actions: [
-        TextButton.icon(
-          onPressed: () {},
-          icon: Icon(
-            Icons.exit_to_app,
-            color: Colors.black,
-          ),
-          label: Text(
-            'تسجيل خروج',
-            style: TextStyle(color: Colors.black),
-          ),
-        ),
-      ],
+      leading: IconButton(onPressed: () {}, icon: Icon(Icons.exit_to_app)),
     );
   }
 }

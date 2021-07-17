@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_k/ui/pages/admin_dashboard_pages/add_kid_media_admin_page/custom_add_cartoon_video_widget.dart';
 import 'package:flutter_k/ui/pages/admin_dashboard_pages/add_kid_media_admin_page/custom_add_game_app_widget.dart';
 import 'package:flutter_k/ui/pages/admin_dashboard_pages/add_kid_media_admin_page/custom_add_web_game_widget.dart';
-import 'package:flutter_k/ui/pages/admin_dashboard_pages/custom_drawer_widget.dart';
+import 'package:flutter_k/ui/pages/admin_dashboard_pages/shared/custom_drawer_widget.dart';
 
 class AddKidMediaAdminPage extends StatelessWidget {
   int currentTab = 2;

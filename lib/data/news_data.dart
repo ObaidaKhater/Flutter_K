@@ -5,56 +5,49 @@ class NewsData {
 
   List<News> news = [
     News(
-        id: '5',
-        title: 'new 1',
+        id: '1',
+        title: 'تعليم الاطفال الاستهلاك الذكي',
         description:
-            'description description description description description',
+            'الاستهلاك الذكي والمسؤول هو مهارة مهمة في الحياة. أخبروا اطفالكم أين تشترون احتياجاتكم غالبا، كيف تتخذون القرارات المتعلقة بالشراء، وما هي المُنتَجات التي تختارونها.',
         imagePath:
-            'https://cdn.cnn.com/cnnnext/dam/assets/201005070938-nyc-skyline-file-0929-full-169.jpg',
+            'assets/images/1.webp',
         date: DateTime.now()),
     News(
         id: '2',
-        title: 'خبر 2',
-        description:
-        'ستشهد شاب فلسطيني، مساء يوم السبت، برصاص الاحتلال الإسرائيلي، في بلدة قصرة جنوب نابلس شمال الضفة الغربية المحتلة، كما وأصيب اثنين آخرين بجراح مختلفة  وأصيب اثنين آخرين بجراح مختلفة.',
+        title: 'الرحلة الرائعة أثناء تطوّر اللغة',
+        description:'يشكل تطوّر اللغة لدى الأولاد مرحلة رائعة، وهو مرحلة تطورية ينتظرها الكثير من الآباء بفارغ الصبر. يمكن أن تساعدوا أولادكم على تعلم اللغة بسهولة كبيرة: ببساطة، تحدثوا معهم وأصغوا إليهم.',
         imagePath:
-        'https://cdn.cnn.com/cnnnext/dam/assets/201005070938-nyc-skyline-file-0929-full-169.jpg',
+        'assets/images/2.webp',
         date: DateTime.now()),
     News(
         id: '3',
-        title: 'new 3',
-        description:
-        'description description description description description',
+        title: 'مهارات المحادثة لدى الأولاد',
+        description:'لقدرة على الكلام والإصغاء للآخرين مهمة للأولاد. فهي تساعدهم في التعرّف إلى الأصدقاء، كسب إصغاء الآخرين، طلب ما يحتاجون إليه، والمشاركة في المجتمع. كلما كبر وتطور الأولاد يتعلمون كيف يمكنهم التحدث والإصغاء. معنى التحدث والإصغاء الإيجابيين هو التحدث بتهذيب وفق الدور، عدم إزعاج الآخرين، والتصرف معهم بآداب.',
         imagePath:
-        'https://cdn.cnn.com/cnnnext/dam/assets/201005070938-nyc-skyline-file-0929-full-169.jpg',
+        'assets/images/3.webp',
         date: DateTime.now()),
     News(
         id: '4',
-        title: 'new 4',
-        description:
-        'description description description description description',
+        title: 'مهارات الكتابة لدى الأولاد',
+        description:'الكتابة هي مهارة ضرورية وهامة جدًّا. من المهم أن تساعدوا رضيعكم على تطوير مهارات الكتابة منذ سن مبكرة جدا، ليكون جاهزا لتعلم الكتابة بشكل رسمي في المدرسة.',
         imagePath:
-        'https://cdn.cnn.com/cnnnext/dam/assets/201005070938-nyc-skyline-file-0929-full-169.jpg',
+        'assets/images/4.webp',
         date: DateTime.now()),
     News(
         id: '5',
-        title: 'new 1',
-        description:
-        'description description description description description',
+        title: 'التعلّم والتطور الإبداعي في سن الروضة',
+        description:'هناك دور مركزي للعب الإبداعي والتجارب الفنية التي تثير الخيال في مراحل تطوّر وتعلّم الأولاد في سن الروضة. يمكن تعزيز وتشجيع الإبداع لدى ابنكم بواسطة نشاطات إبداعية حرة وسلسة، واللعب معه.',
         imagePath:
-        'https://cdn.cnn.com/cnnnext/dam/assets/201005070938-nyc-skyline-file-0929-full-169.jpg',
+        'assets/images/5.webp',
         date: DateTime.now()),
     News(
-        id: '2',
-        title: 'خبر 2',
-        description:
-        'ستشهد شاب فلسطيني، مساء يوم السبت، برصاص الاحتلال الإسرائيلي، في بلدة قصرة جنوب نابلس شمال الضفة الغربية المحتلة، كما وأصيب اثنين آخرين بجراح مختلفة  وأصيب اثنين آخرين بجراح مختلفة.',
+        id: '6',
+        title: 'تطوّر الأولاد في سن الروضة',
+        description:'يكون الأطفال في سن الروضة بأشكال وأحجام مختلفة، ولكن يتطورون وفق المراحل ذاتها منذ سن 3 حتى 4 سنوات. ما المتوقع أن يقوم به ابنكم، كيف يمكنكم مساعدته',
         imagePath:
-        'https://cdn.cnn.com/cnnnext/dam/assets/201005070938-nyc-skyline-file-0929-full-169.jpg',
+        'assets/images/6.webp',
         date: DateTime.now()),
-   ];
+  ];
 
   static NewsData newsData = NewsData._();
-
-
 }

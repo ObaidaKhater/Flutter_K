@@ -16,7 +16,7 @@ class _ProgressButtonAddAssignmentState
   Widget build(BuildContext context) {
     return ProgressButton(
       defaultWidget: const Text(
-        'تسليم الواجب',
+        'تقديم الطلب',
         style: TextStyle(
           color: Colors.white,
           fontFamily: 'cairo',
@@ -26,8 +26,8 @@ class _ProgressButtonAddAssignmentState
           valueColor: AlwaysStoppedAnimation<Color>(Colors.white)),
       color: Colors.blue,
       borderRadius: 50,
-      width: 200.w,
-      height: 48.h,
+      width: 170.w,
+      height: 35.h,
       onPressed: () async {
         int score =
             await Future.delayed(const Duration(milliseconds: 4000), () => 42);

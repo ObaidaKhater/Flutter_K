@@ -37,7 +37,7 @@ dependencies:
   flutter_progress_button: ^0.6.2
   webview_flutter: ^2.0.9
   image_picker: ^0.8.1+3
-
+  polls: ^1.0.1
 
 dev_dependencies:
   flutter_test:
@@ -58,6 +58,7 @@ flutter:
   assets:
     - assets/fonts/
     - assets/video/
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

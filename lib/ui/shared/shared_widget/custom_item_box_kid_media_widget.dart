@@ -15,7 +15,7 @@ class CustomItemBoxKidMediaWidget extends StatelessWidget {
       onTap: this.onTap,
       child: Container(
         width: double.infinity,
-        height: 200,
+        height: 200.h,
         margin: EdgeInsets.symmetric(vertical: 7.h, horizontal: 7.w),
         child: Container(
           alignment: Alignment.bottomCenter,
@@ -44,7 +44,7 @@ class CustomItemBoxKidMediaWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(5.r),
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: NetworkImage(this.imagePath),
+            image: ExactAssetImage(this.imagePath),
           ),
         ),
       ),

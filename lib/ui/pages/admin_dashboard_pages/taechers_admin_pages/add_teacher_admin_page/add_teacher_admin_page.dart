@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_k/ui/pages/add_lesson_page/custom_text_form_field_widget.dart';
-import 'package:flutter_k/ui/pages/admin_dashboard_pages/add_teacher_admin_page/custom_select_gender_widget.dart';
+import 'package:flutter_k/ui/pages/admin_dashboard_pages/taechers_admin_pages/add_teacher_admin_page/custom_select_teacher_gender_widget.dart';
 import 'package:flutter_k/ui/shared/shared_widget/custom_button_widget.dart';
 
-class CustomAddTeacherWidget extends StatelessWidget {
+class AddTeacherAdminPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -81,7 +81,7 @@ class CustomAddTeacherWidget extends StatelessWidget {
                   },
                   onSaved: (onSaved) {},
                   maxLines: 1),
-              CustomSelectGenderWidget(),
+              CustomSelectTeacherGenderWidget(),
               SizedBox(height: 20),
               CustomButtonWidget(title: 'إضافة', onPressed: () {}),
             ],

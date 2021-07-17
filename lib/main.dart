@@ -6,8 +6,8 @@ import 'package:flutter_k/model/student.dart';
 import 'package:flutter_k/model/tuition_fees.dart';
 import 'package:flutter_k/model/user.dart';
 import 'package:flutter_k/ui/pages/add_lesson_page/add_lesson_page.dart';
-import 'package:flutter_k/ui/pages/admin_dashboard_pages/add_teacher_admin_page/add_teacher_admin_page.dart';
-import 'package:flutter_k/ui/pages/admin_dashboard_pages/main_dashboard_page.dart';
+import 'package:flutter_k/ui/pages/admin_dashboard_pages/students_admin_pages/main_students_admin_page.dart';
+import 'package:flutter_k/ui/pages/admin_dashboard_pages/taechers_admin_pages/main_teachers_admin_page.dart';
 import 'package:flutter_k/ui/pages/app_game_pages/app_game_page.dart';
 import 'package:flutter_k/ui/pages/cartoon_video_pages/cartoon_video_page.dart';
 import 'package:flutter_k/ui/pages/classes_pages/class_details_page.dart';
@@ -27,7 +27,9 @@ import 'package:flutter_k/ui/pages/student_details_page/student_details_page.dar
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'constants.dart';
-import 'ui/pages/lesson_details/lesson_details_screen.dart';
+import 'ui/pages/add_poll/add_poll_screen.dart';
+import 'ui/pages/lesson_details_with_delivery/lesson_details_with_delivery_screen.dart';
+import 'ui/pages/study_fees_statement/study_fees_statement_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -39,8 +41,9 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: Size(360, 739),
       builder: () => MaterialApp(
+        debugShowCheckedModeBanner: false,
         // Main Page
-        home: AddTeacherAdminPage(),
+        home: MainStudentsAdminPage(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
@@ -85,7 +88,6 @@ class MyApp extends StatelessWidget {
               subtitle2: TextStyle(
                 color: kTextDarkColor,
                 fontSize: 17.sp,
-                fontWeight: FontWeight.w600,
                 fontFamily: 'cairo',
               ),
               headline3: TextStyle(

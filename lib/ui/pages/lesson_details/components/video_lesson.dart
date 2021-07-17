@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_k/constants.dart';
 import 'show_video.dart';
 
 class VideoLesson extends StatefulWidget {
@@ -16,6 +17,7 @@ class _VideoLessonState extends State<VideoLesson> {
     return Column(
       children: [
         _title(context),
+        SizedBox(height: kDefaultPadding),
         ShowVideo(),
       ],
     );
