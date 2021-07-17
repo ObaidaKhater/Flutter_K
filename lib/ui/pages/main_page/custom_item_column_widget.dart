@@ -5,8 +5,13 @@ class CustomItemColumnWidget extends StatelessWidget {
   String title;
   IconData icon;
 
+  Function onTap;
 
-  CustomItemColumnWidget({@required this.title, @required this.icon});
+  CustomItemColumnWidget({
+    @required this.title,
+    @required this.icon,
+    @required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +33,7 @@ class CustomItemColumnWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(12.r),
             color: Theme.of(context).primaryColor),
       ),
-      onTap: () {
-        // TODO: Go To Page
-      },
+      onTap: onTap,
     );
   }
 }

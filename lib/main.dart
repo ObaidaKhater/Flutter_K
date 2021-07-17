@@ -43,7 +43,8 @@ class MyApp extends StatelessWidget {
       builder: () => MaterialApp(
         debugShowCheckedModeBanner: false,
         // Main Page
-        home: MainStudentsAdminPage(),
+
+        home: MainPage(),
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
