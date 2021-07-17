@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-=======
 import 'package:flutter_k/model/attendance_detection.dart';
 import 'package:flutter_k/model/class.dart';
 import 'package:flutter_k/model/location.dart';
@@ -25,7 +23,6 @@ import 'package:flutter_k/ui/pages/sigIn_pages/pin_code_sign_page.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/sigIn_page.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/sigIn_with_pin_code_page.dart';
 import 'package:flutter_k/ui/pages/student_details_page/student_details_page.dart';
->>>>>>> 6d55e700f298feb8c6bb9217793b07186414d0ec
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'constants.dart';
@@ -44,11 +41,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(360, 739),
       builder: () => MaterialApp(
         // Main Page
-<<<<<<< HEAD
-        home: AddPoll(),
-=======
         home: MainDashboardPage(),
->>>>>>> 6d55e700f298feb8c6bb9217793b07186414d0ec
         // Edit Directionality
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
