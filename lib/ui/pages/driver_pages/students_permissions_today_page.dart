@@ -12,15 +12,6 @@ class StudentsPermissionsToday extends StatelessWidget {
           'أُذونات الطلاب لليوم',
           style: Theme.of(context).textTheme.headline1,
         ),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_rounded,
-            color: Theme.of(context).backgroundColor,
-          ),
-          onPressed: () {
-            // TODO: Go (Main Driver Page)
-          },
-        ),
       ),
       // TODO : Get List Student From (DriverData.getStudentsPermissionsToday)
       body: Container(
