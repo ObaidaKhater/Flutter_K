@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_k/ui/pages/admin_dashboard_pages/taechers_admin_pages/main_teachers_admin_page.dart';
+import 'package:flutter_k/ui/pages/driver_page_actions/driver_page_actions_screen.dart';
 import 'package:flutter_k/ui/shared/shared_widget/custom_button_widget.dart';
 import 'package:flutter_k/ui/pages/sigIn_pages/custom_textField_widget.dart';
 import 'package:flutter_k/ui/pages/teacher_page/teacher_screen.dart';
@@ -50,12 +52,20 @@ class SignInPage extends StatelessWidget {
                   title: 'تسجيل الدخول',
                   onPressed: () {
                     _formKey.currentState.save();
-                    if (userName.length != 0 && password.length != 0) {}
+                    if (userName.length != 0 && password.length != 0) {
+                      if (userName == 'Drive' && password == '1234567') {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => DriverPageActions()));
+                      } else if (userName == 'Admin' && password == '1234567') {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => MainTeachersAdminPage()));
+                      }
+                    }
                     //TODO: we have two user type ( teacher and driver)
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => TeacherScreen()));
+                    // Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //         builder: (context) => TeacherScreen()));
                   },
                 ),
               ],
